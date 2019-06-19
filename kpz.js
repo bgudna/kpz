@@ -1,0 +1,1 @@
+Verkefnalisti = new Mongo.Collection('verkefni');

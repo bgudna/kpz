@@ -1,0 +1,54 @@
+<template name="listinn">
+{{> sAlert}}
+<div class="container-fluid">
+    <div class="col-md-4 top">
+    <div class="work">
+        <div class="header">
+            work & projects
+        </div>
+        <div class="itemlist">
+        <ul>
+        {{#each verkWork}}
+            <li><form class="verkUpdate">
+            <input type="text" name="verk" class="verk {{#if checked}}checked{{/if}}" value="{{name}}">
+                <img class="toggle-checked" src="/img/work-check.png">
+                <img class="remove" src="/img/work-delete.png">
+            <input type="submit" class="btnhide" value="">
+            </form></li>
+        {{/each}}
+        </ul>
+            <div class="action">
+            <form class="submitWork"><input type="text" name="verkWork" class="worksubmit" placeholder="Add item"><input type="submit" class="btnhide" value=""></form>
+            </div>
+        
+        </div>
+    </div>
+    </div>
+
+    <div class="col-md-4 top">
+    <div class="personal">
+        <div class="header">
+            personal & play
+        </div>
+        <div class="itemlist">
+        <ul>
+        {{#each personalWork}}
+            <li><form class="personalUpdate">
+            <input type="text" name="personal" class="verk {{#if checked}}checked{{/if}}" value="{{name}}">
+                <img class="toggle-checked" src="/img/personal-check.png">
+                <img class="remove" src="/img/personal-delete.png">
+            <input type="submit" class="btnhide" value="">
+            </form></li>
+        {{/each}}
+        </ul>
+        </div>
+            <div class="action">
+            <form class="submitPersonal"><input type="text" name="verkPersonal" class="worksubmit" placeholder="Add item"><input type="submit" class="btnhide" value=""></form>
+            </div>
+    </div>
+    </div>
+
+    {{> textabox}}
+        
+</div>
+</template>

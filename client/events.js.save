@@ -1,0 +1,62 @@
+Template.listinn.events({
+	'click .remove' : function(){
+		var verk = this._id;
+		Meteor.call('eydaVerkefni',verk);
+	},
+	'submit form.submitWork': function(event){
+		event.preventDefault();
+		var verk = event.target.verkWork.value;
+		Meteor.call('setjaWorkVerkefni', verk);
+		event.target.verkWork.value = "";
+	},
+	'submit form.verkUpdate': function(event){
+		event.preventDefault();
+		var verk = this._id;
+		var punktar = event.target.verk.value;
+		Meteor.call('updateNotes', verk, punktar);
+	},
+	'submit form.submitPersonal': function(event){
+		event.preventDefault();
+		var verk = event.target.verkPersonal.value;
+		Meteor.call('setjaWorkPersonal', verk);
+		event.target.verkPersonal.value = "";
+	},
+	'submit form.personalUpdate': function(event){
+		event.preventDefault();
+		var verk = this._id;
+		var punktar = event.target.personal.value;
+		Meteor.call('updateNotes', verk, punktar);
+	},
+	'click .toggle-checked': function () {
+    	var verk = this._id;
+    	Meteor.call('toggleChecked',verk, ! this.checked);
+  },
+});
+
+Template.textabox.events({
+	'submit form.submitNotes': function(event){
+		event.preventDefault();
+		var punktar = event.target.verkNotes.value;
+		Meteor.call('setjaWorkNotes', punktar);
+		event.target.verkNotes.value = "";
+	},
+	'submit form.updateNotes': function(event){
+		event.preventDefault();
+		var verk = this._id;
+		var punktar = event.target.note.value;
+		Meteor.call('updateNotes', verk, punktar);
+	},
+	'submit form.saveNotes': function(event){
+		event.preventDefault();
+		var verk = this._id;
+		var punktar = event.target.note.value;
+		Meteor.call('updateNotes', verk, punktar);
+	},
+
+});
+
+Template.textabox.rendered = function(){
+  /* $textarea = ('.box, $(this.firstNode));
+   $textarea.autosize();
+};
+

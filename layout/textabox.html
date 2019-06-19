@@ -1,0 +1,23 @@
+<template name="textabox">
+    <div class="col-md-4 top">
+    <div class="inspiration">
+        <div class="header">
+            fieldnotes
+        </div>
+        <div class="noteslist">
+		{{#each notesWork}}
+           <form class="saveNotes"><textarea placeholder="Write your notes here" class="box" name="note">{{name}}</textarea>
+           <div class="toolset">
+                <input type="submit" class="btn" value="Save">
+                <a href="#" class="remove btn">Delete</a>
+            </div>
+           </form>
+		{{/each}}
+        </div>
+           <div class="action">
+            <form class="submitNotes"><input class="notesubmit" name="verkNotes" placeholder="New note"><input type="submit" class="btnhide" value=""></form>
+            </div>
+    </div>
+    </div>
+
+</template>

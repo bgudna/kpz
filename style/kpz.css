@@ -1,0 +1,261 @@
+body {
+	background: #8ba4a0;
+	font-family: 'Roboto', sans-serif;
+}
+
+a:hover {
+	text-decoration: none;
+}
+
+/* General */
+
+.nopadding {
+   padding: 0 !important;
+   margin: 0 !important;
+}
+
+.headtest {
+	padding: 10px;
+	background: #444;
+	color: #fff;
+}
+
+.headspace {
+	background: #333333;
+	color: #fff;
+	height: 40px;
+	line-height: 40px;
+	width: 100%;
+}
+
+.headspace a.login-link-text  {
+	color: #fff;
+}
+
+.headspace span {
+	font-weight:bold;
+}
+.top {
+	margin-top: 20px;
+}
+
+.btnhide {
+	display: none;
+	visibility: none;
+}
+textarea:focus, input:focus {
+	outline: 0;
+}
+
+.remove {
+	cursor: pointer;
+}
+
+.toggle-checked {
+	cursor: pointer;
+}
+
+::-webkit-scrollbar {
+    width: 10px;
+}
+ 
+::-webkit-scrollbar-track {
+    -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.2); 
+    border-radius: 10px;
+}
+ 
+::-webkit-scrollbar-thumb {
+    border-radius: 10px;
+    -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3); 
+}
+
+/* WORK SECTION */
+
+.work {
+	background: #b8c2b2;
+}
+
+.work .header {
+	height: 60px;
+	background: #cdd4c9;
+	padding:20px;
+	text-transform: uppercase;
+	color: #94a18c;
+	font-size: 18px;
+}
+
+.work .verkUpdate .verk {
+	width: 90%;
+	border: 0;
+	background: none;
+	color: #73816b;
+}
+.work .itemlist {
+	margin-top: 10px;
+}
+
+.work .itemlist ul {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+}
+
+.work .itemlist ul li {
+	color: #73816b;
+	padding: 10px 5px 10px 20px;
+	border-bottom: 1px solid #c6cec1;	
+}
+
+.checked {
+	text-decoration: line-through;
+}
+
+.work .action {
+	height: 60px;
+	background: #cdd4c9;
+	padding: 0 20px 0 20px;
+	text-transform: uppercase;
+	color: #94a18c;
+	font-size: 16px;
+}
+
+.work .worksubmit {
+	border: none;
+	width: 100%;
+	height: 100%;
+	background: url('../img/plus-1.png') no-repeat right;
+	min-height: 60px;
+	padding-right: 25px;
+}
+
+/* PERSONAL SECTION */
+
+.personal {
+	background: #f73b56;
+}
+
+.personal .header {
+	height: 60px;
+	background: #f32439;
+	padding:20px;
+	text-transform: uppercase;
+	color: #fabcc0;
+	font-size: 18px;
+}
+
+.personal .personalUpdate .verk {
+	width: 90%;
+	border: 0;
+	background: none;
+	color: #fcc1c7;
+}
+
+.personal .itemlist {
+	margin-top: 10px;
+}
+
+.personal .itemlist ul {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+}
+
+.personal .itemlist ul li {
+	color: #fcc1c7;
+	padding: 10px 5px 10px 20px;
+	border-bottom: 1px solid #f96278;	
+}
+
+.personal .action {
+	height: 60px;
+	background: #f32439;
+	padding: 0 20px 0 20px;
+	text-transform: uppercase;
+	color: #f9a5ab;
+	font-size: 16px;
+}
+
+.personal .worksubmit {
+	border: none;
+	width: 100%;
+	height: 100%;
+	background: url('../img/plus-2.png') no-repeat right;
+	min-height: 60px;
+	padding-right: 25px;
+}
+
+
+/* INSPIRE SECTION */
+
+.inspiration {
+	background: #443b5e;
+}
+
+.inspiration .header {
+	height: 60px;
+	background: #2b2440;
+	padding:20px;
+	text-transform: uppercase;
+	color: #bebcc2;
+	font-size: 18px;
+}
+.inspiration .noteslist {
+	padding: 20px 20px 0px 20px;
+}
+.inspiration .action {
+	height: 60px;
+	background: #2b2440;
+	padding: 0 20px 0 20px;
+	text-transform: uppercase;
+	color: #bebcc2;
+	font-size: 16px;
+}
+
+.inspiration .notesubmit {
+	border: none;
+	width: 100%;
+	height: 100%;
+	min-height: 60px;
+	padding-right: 25px;
+	background: url('../img/plus-3.png') no-repeat right;
+}
+.inspiration .btn {
+	background: #3f3658;
+	border: none;
+	font-size: 12px;
+	padding: 10px;
+	margin-left: 5px;
+	color: #bebcc2;
+	text-transform: uppercase;
+}
+.inspiration .btn:hover {
+	background: #2b2440;
+}
+
+.noteslist .box {
+	width: 100%;
+	color: #c3c1c9;
+	background: none;
+	border: 0;
+	resize: none;
+	min-height: 300px;
+	font-size: 15px;
+}
+.noteslist .toolset {
+	width: 100%;
+	text-align: right;
+	margin: 14px 0 10px 0;
+}
+
+@media only screen and (max-width:400px) {
+
+.work .verkUpdate .verk, .personal .personalUpdate .verk {
+	font-size: 13px;
+	width: 80%;
+}
+
+.noteslist .box {
+	font-size: 14px;
+}
+
+}
